@@ -12,3 +12,7 @@ https://www.behance.net/gallery/115391773/Fruit-Market-Online-Delivery-App-UI-ki
    - firebase
 2. localization
    - Getx
+
+## what i've learned :
+
+1. how to use and controll animation in flutter
