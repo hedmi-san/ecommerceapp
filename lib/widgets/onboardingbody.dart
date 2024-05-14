@@ -2,7 +2,9 @@ import 'package:ecommerceapp/core/utils/size_config.dart';
 import 'package:ecommerceapp/widgets/customButtons.dart';
 import 'package:ecommerceapp/widgets/customPageView.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
+import '../screens/Auth/presentation/pages/login.dart';
 import 'customIndicatore.dart';
 
 class OnBoardingBody extends StatefulWidget {
@@ -56,6 +58,17 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
           right: SizeConfig.defaultSize! * 10,
           bottom: SizeConfig.defaultSize! * 10,
           child: CustonGeneralButton(
+            onTap: () {
+              if (pageController!.page! < 2) {
+                pageController?.nextPage(
+                    duration: const Duration(microseconds: 500),
+                    curve: Curves.easeIn);
+              } else {
+                Get.to(() => LoginView(),
+                    transition: Transition.rightToLeft,
+                    duration: const Duration(microseconds: 500));
+              }
+            },
             text: pageController!.hasClients
                 ? (pageController?.page == 2 ? 'Get Started' : 'Next')
                 : 'Next',
