@@ -33,26 +33,28 @@ class LoginViewBody extends StatelessWidget {
               flex: 1,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8),
-                child: CustomButtonWithIcon(
-                  onTap: () {
-                    Get.to(()=> );
-                  },
-                  text: 'Log in with',
-                  color: Color(0xFF4267B2),
-                  icon: FontAwesomeIcons.google,
-                ),
+                child: Text('test')
+                //CustomButtonWithIcon(
+                //   // onTap: () {
+                //   //   //Get.to(()=> );
+                //   // },
+                //   text: 'Log in with',
+                //   color: Color(0xFF4267B2),
+                //   icon: FontAwesomeIcons.google,
+                // ),
               ),
             ),
             Flexible(
               flex: 1,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8),
-                child: CustomButtonWithIcon(
-                  onTap: () {},
-                  text: 'Log in with',
-                  color: Color(0xFF4267B2),
-                  icon: FontAwesomeIcons.facebookF,
-                ),
+                child: Text('test')
+                // CustomButtonWithIcon(
+                //   onTap: () {},
+                //   text: 'Log in with',
+                //   color: Color(0xFF4267B2),
+                //   icon: FontAwesomeIcons.facebookF,
+                // ),
               ),
             ),
           ],
